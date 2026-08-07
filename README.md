@@ -1,63 +1,212 @@
-# Problem Statement
+Vaccination Slot Booking & Tracking Platform
 
-## 1. Title
-Cloud Bus Pass Management System
+Project Overview
 
-## 2. Domain
-Transportation Management
+The Vaccination Slot Booking & Tracking Platform is a web-based application that enables users to register, log in, search for available vaccination slots, book appointments, and track their vaccination status. The platform also provides an admin dashboard for managing vaccination centers, vaccine availability, and booking records.
 
-## 3. Who is the user? (2-3 user types, with roles)
-- Admin – Manages bus pass applications, approves/rejects requests, and maintains records.
-- Student/Passenger – Applies for a bus pass, views application status, and renews passes.
-- Bus Inspector – Verifies the validity of bus passes during travel.
+The system simplifies the vaccination appointment process by eliminating manual scheduling, reducing waiting time, and providing real-time slot availability. It offers a secure authentication system using JWT and maintains all booking information in a MySQL database.
 
-## 4. What problem are we solving?
-Many bus pass systems rely on manual paperwork, making the process slow and inefficient. Users often have to visit transport offices multiple times to apply, renew, or check the status of their bus passes. This results in delays, errors, and unnecessary paperwork. For example, a student may spend hours waiting in line just to renew a bus pass. A digital system simplifies the entire process by allowing users to apply and track their bus passes online.
+---
 
-## 5. Proposed Solution
-The application will provide an online platform for bus pass management. Users can register, log in, apply for new passes, renew existing passes, and check application status. Admins can review applications, approve or reject requests, and manage user records. Bus inspectors can verify pass details using the system.
+Features
 
-## 6. Core Entities / Database Tables
+User Module
+
+- User Registration
+- User Login (JWT Authentication)
+- View Available Vaccination Centers
+- Search Available Slots
+- Book Vaccination Slot
+- View Booking History
+- Cancel Booking
+- Track Vaccination Status
+
+Admin Module
+
+- Admin Login
+- Manage Vaccination Centers
+- Manage Vaccines
+- Manage Vaccination Slots
+- View User Bookings
+- Update Slot Availability
+- Dashboard with Booking Statistics
+
+---
+
+Technology Stack
+
+Frontend
+
+- HTML5
+- CSS3
+- JavaScript
+
+Backend
+
+- Java
+- Spring Boot
+- Spring Data JPA
+- Spring Security
+- JWT Authentication
+- REST API
+
+Database
+
+- MySQL
+
+Tools
+
+- IntelliJ IDEA / VS Code
+- MySQL Workbench
+- Postman
+- Git
+- GitHub
+
+---
+
+Project Structure
+
+vaccination-slot-booking-platform/
+│
+├── frontend/
+│   ├── html/
+│   ├── css/
+│   └── js/
+│
+├── backend/
+│   ├── controller/
+│   ├── service/
+│   ├── repository/
+│   ├── entity/
+│   ├── security/
+│   └── config/
+│
+├── database/
+│   └── vaccination.sql
+│
+├── docs/
+│   └── diagrams/
+│       ├── architecture-v1.png
+│       ├── er-diagram-v1.png
+│       └── class-diagram-v1.png
+│
+├── Problem_Statement.md
+├── README.md
+└── pom.xml
+
+---
+
+Core Modules
+
+Module 1 – Authentication
+
+- User Registration
+- User Login
+- JWT Token Generation
+- Secure API Access
+
+Module 2 – Vaccination Slot Management
+
+- Add Vaccination Centers
+- Add Vaccines
+- Create Slots
+- Update Slot Availability
+- Delete Slots
+
+Module 3 – Booking Management
+
+- Search Available Slots
+- Book Slot
+- Cancel Booking
+- View Booking History
+- Track Vaccination Status
+
+Module 4 – Admin Dashboard
+
+- View Total Users
+- View Total Bookings
+- View Available Slots
+- Manage Vaccination Data
+
+---
+
+Database Tables
+
 - Users
-- BusPass
-- Applications
-- Routes
-- Payments
-- RenewalRequests
-- Notifications
+- Vaccination_Centers
+- Vaccines
+- Vaccination_Slots
+- Bookings
 
-## 7. User Roles & Permissions
-### Admin
-- Manage users
-- Approve/Reject applications
-- Manage routes
-- View reports
-- Update bus pass records
+---
 
-### User (Student/Passenger)
-- Register/Login
-- Apply for a bus pass
-- Renew bus pass
-- View application status
-- Download bus pass
+Security
 
-### Bus Inspector
-- Verify bus pass
-- View passenger details
-- Validate pass status
+- Spring Security
+- JWT Authentication
+- Password Encryption
+- Role-Based Authorization (Admin/User)
 
-## 8. Success Criteria
-- A user should be able to apply for a bus pass in under 2 minutes.
-- Admin should be able to approve or reject applications efficiently.
-- Users should be able to track application status in real time.
-- The system should securely store and manage all bus pass records.
+---
 
-## 9. Out of Scope
-- Online payment gateway integration
-- SMS or Email notification service
-- GPS/live bus tracking
-- Mobile application
-- AI-based route recommendations
+How to Run the Project
 
-## 10. Chosen Track
-Java (Spring Boot)
+Step 1
+
+Clone the repository.
+
+Step 2
+
+Create the MySQL database.
+
+CREATE DATABASE vaccination_booking;
+
+Step 3
+
+Update the database configuration in "application.properties".
+
+Step 4
+
+Run the Spring Boot application.
+
+Step 5
+
+Open the frontend in your browser.
+
+Step 6
+
+Register a new account.
+
+Step 7
+
+Login to receive a JWT token.
+
+Step 8
+
+Book and track vaccination slots.
+
+---
+
+Future Enhancements
+
+- Email Notifications
+- SMS Appointment Reminders
+- QR Code for Vaccination Certificate
+- AI-Based Slot Demand Prediction
+- Online Payment Integration
+- Mobile Application Support
+
+---
+
+Expected Outcome
+
+The system provides a secure and user-friendly platform for vaccination slot booking and tracking. It reduces manual effort, improves appointment management, ensures efficient slot allocation, and enables administrators to manage vaccination data effectively.
+
+---
+
+
+Capstone Project
+
+Department of Information Technology
+
+Academic Year: 2024-2028
