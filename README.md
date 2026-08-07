@@ -64,38 +64,6 @@ Tools
 
 ---
 
-Project Structure
-
-vaccination-slot-booking-platform/
-│
-├── frontend/
-│   ├── html/
-│   ├── css/
-│   └── js/
-│
-├── backend/
-│   ├── controller/
-│   ├── service/
-│   ├── repository/
-│   ├── entity/
-│   ├── security/
-│   └── config/
-│
-├── database/
-│   └── vaccination.sql
-│
-├── docs/
-│   └── diagrams/
-│       ├── architecture-v1.png
-│       ├── er-diagram-v1.png
-│       └── class-diagram-v1.png
-│
-├── Problem_Statement.md
-├── README.md
-└── pom.xml
-
----
-
 Core Modules
 
 Module 1 – Authentication
