@@ -97,7 +97,6 @@ The platform aims to provide a centralized, secure, and user-friendly solution f
 
 ## 📂 Project Structure
 
-```text
 vaccination-slot-booking/
 │
 ├── frontend/
@@ -108,11 +107,9 @@ vaccination-slot-booking/
 ├── Problem_Statement.md
 ├── README.md
 └── .gitignore
-```
 
 ## 🔄 Booking Workflow
 
-```text
 User Registration
        ↓
       Login
@@ -132,7 +129,6 @@ Confirm Appointment
 Booking Created
        ↓
 Track Booking Status
-```
 
 ## 🔐 Security
 
@@ -149,14 +145,12 @@ Security features include:
 
 ## 🗄️ Main Database Tables
 
-```text
 Users
 Vaccination_Centers
 Vaccines
 Vaccination_Slots
 Bookings
 Admins
-```
 
 ## 📊 Project Status
 
